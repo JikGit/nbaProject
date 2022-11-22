@@ -1,0 +1,24 @@
+*{
+	margin: 0;
+	box-sizing: border-box;
+}
+
+:root{
+	--bgColor: #191919;
+}
+
+#topBar{
+	height: 150px;
+	width: 100%;
+	background-color: var(--bgColor);
+}
+
+#topBar > img{
+	position: aboslute;	
+	width: 100px;
+	height: 70px;
+	top: 15%;
+	left: 20%;
+}
+
+
