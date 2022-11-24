@@ -1,8 +1,9 @@
 #container > .textBlock  img{
 	padding: 30px;
-	position: relative;
+	position: absolute;
 	width: 1800px;
 	left: 50%;
+	top: 600px;
 	transform: translateX(-50%);
 }
 

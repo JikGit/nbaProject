@@ -1,16 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300&family=Playfair+Display&family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300&family=Playfair+Display&family=Roboto+Slab&display=swap'); /*importa font*/
 
+/* "*" applica a tutti gli elementi le proprieta all'interno delle {} */
 *{
-	margin: 0;
-	box-sizing: border-box;
-	font-family: 'Roboto Slab', serif;
+	margin: 0; /* crea spazio attorno agli elementi, al di fuori di qualsiasi confine definito.*/
+	box-sizing: border-box; /* proprietà ci consente di includere il padding e il bordo nella larghezza e altezza totale di un elemento */
+	font-family: 'Roboto Slab', serif; 
 }
 
 :root{
 	--bgColor: #191919;
 	--fontColor: #FFFFFF;
 	--bodyColor: #181a1b;
+	--topBarHeight: 110;
 }
+
 body{background: var(--bodyColor);}
 
 a {
@@ -21,10 +24,14 @@ a {
 
 /* TOPBAR */
 #topBar{
-	height: 110px;
+	height: calc(var(--topBarHeight) * 1px);
 	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
 	background-color: var(--bgColor);
-	position: relative;
+	z-index: 2;
+	border-bottom: 1px solid rgb(255, 255, 255, 0.4);
 }
 
 #topBar > img{
@@ -53,6 +60,7 @@ a {
 #topBar > #links *.selected{border-bottom: 1px solid white}
 
 #container{
+	margin-top:  calc(var(--topBarHeight) * 1px);
 	color: var(--fontColor);
 	width: 50%;		
 	position: absolute;	
