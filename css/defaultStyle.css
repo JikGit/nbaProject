@@ -9,7 +9,9 @@
 :root{
 	--bgColor: #191919;
 	--fontColor: #FFFFFF;
+	--bodyColor: #181a1b;
 }
+body{background: var(--bodyColor);}
 
 a {
 	text-decoration: none;
@@ -51,7 +53,8 @@ a {
 #topBar > #links *.selected{border-bottom: 1px solid white}
 
 #container{
-	width: 50%;	
+	color: var(--fontColor);
+	width: 50%;		
 	position: absolute;	
 	left: 50%;
 	transform: translateX(-50%);
