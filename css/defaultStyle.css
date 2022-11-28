@@ -60,21 +60,25 @@ a {
 #topBar > #links *.selected{border-bottom: 1px solid white}
 
 #container{
-	margin-top:  calc(var(--topBarHeight) * 1px);
+	margin-top:  calc(var(--topBarHeight) * 1.1px);
+	margin-bottom: 200px;
 	color: var(--fontColor);
-	width: 50%;		
-	position: absolute;	
+	width: 900px;
+	position: relative;	
 	left: 50%;
 	transform: translateX(-50%);
 }
 
 #container > .title{margin-top: 20px; font-size: 40px}
-#container > .textBlock > .descrizione{font-size: 22px;}
+#container > .textBlock > .descrizione{font-size: 18px;}
+#container > .textBlock .subTitle{
+	color: rgba(255,255,255,0.5);
+}
 
-#container > .textBlock > img{
+#container > .textBlock img.image{
 	width: 200px;
-	height: 350px;
 	float: right;
-	margin: 5px;
+	margin: 20px;
+	box-shadow: 3px 3px rgba(0,0,0,0.5);
 }
 
