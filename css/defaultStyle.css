@@ -7,8 +7,9 @@
 	font-family: 'Roboto Slab', serif; 
 }
 
-:root{
-	--bgColor: #191919;
+/* */
+:root{			
+	--bgColor: #191919;/* "--" rappresentano proprietà personalizzate che contengono un valore che può essere utilizzato in altre dichiarazioni utilizzando la funzione var().*/
 	--fontColor: #FFFFFF;
 	--bodyColor: #181a1b;
 	--topBarHeight: 110;
@@ -24,7 +25,7 @@ a {
 
 /* TOPBAR */
 #topBar{
-	height: calc(var(--topBarHeight) * 1px);
+	height: calc(var(--topBarHeight) * 1px); 	
 	width: 100%;
 	position: fixed;
 	top: 0;
