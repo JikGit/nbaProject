@@ -8,17 +8,26 @@
 }
 
 :root{
-	--bgColor: #191919;
-	--fontColor: #FFFFFF;
+	--bgColor: #d8dee9;
+	--fontColor: #000000;
+	--shadowLinksColor: rgba(0,0,0,0.3);
+	--titleColor: #1d4289;
+	--subTitleColor: rgb(26, 83, 255);
+	--subSubTitleColor: rgb(255,0,0);
+	--borderTopBarColor: rgba(0,0,0,0.3);
 	--bodyColor: #181a1b;
 	--topBarHeight: 110;
 }
 
-body{background: var(--bodyColor);}
+body{background: var(--bgColor);}
 
 a {
 	text-decoration: none;
 	color: var(--fontColor);
+}
+
+img{
+	filter: drop-shadow(5px 7px 16px #000);
 }
 
 
@@ -31,7 +40,7 @@ a {
 	left: 0;
 	background-color: var(--bgColor);
 	z-index: 2;
-	border-bottom: 1px solid rgb(255, 255, 255, 0.4);
+	border-bottom: 1px solid var(--borderTopBarColor);
 }
 
 #topBar > img{
@@ -55,9 +64,11 @@ a {
 #topBar > #links > a{
 	font-size: 18px;
 	margin-right: 30px;
+	font-weight: bold;
+	text-shadow: 5px 5px 5px var(--shadowLinksColor);
 }
 
-#topBar > #links *.selected{border-bottom: 1px solid white}
+#topBar > #links *.selected{border-bottom: 1px solid #FFFFFF}
 
 #container{
 	margin-top:  calc(var(--topBarHeight) * 1.1px);
@@ -69,16 +80,20 @@ a {
 	transform: translateX(-50%);
 }
 
-#container > .title{margin-top: 20px; font-size: 40px}
 #container > .textBlock > .descrizione{font-size: 18px;}
-#container > .textBlock .subTitle{
-	color: rgba(255,255,255,0.5);
+
+/* titoli */
+#container > .title{
+	margin-top: 20px;
+	font-size: 40px;
+	color: var(--titleColor);
 }
+#container > .textBlock h3.subTitle{color: var(--subTitleColor);}
+#container > .textBlock h4.subSubTitle{color: var(--subSubTitleColor);}
 
 #container > .textBlock img.image{
 	width: 200px;
 	float: right;
 	margin: 20px;
-	box-shadow: 3px 3px rgba(0,0,0,0.5);
 }
 

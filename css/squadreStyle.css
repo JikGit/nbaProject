@@ -1,15 +1,7 @@
-#container > .textBlock  > .containerImage {
-	/* width: 1800px;
-	left: 50%;
-	top: 600px;
-	width: 100%; */
-}
-
 #container > .textBlock  > .containerImage > img{
 	padding: 30px;
 	position: relative;
-	left: 50%;
-	transform: translateX(-50%);
+	padding-left: 0;
 }
 
 
