@@ -1,7 +1,4 @@
-#container > .textBlock  > .containerImage > img{
-	padding: 30px;
-	position: relative;
-	padding-left: 0;
-}
+/* spazio sopra */
+#container > .textBlock  > .containerImage > img{padding: 30px 30px 30px 0;}
 
 

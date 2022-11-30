@@ -1,3 +1,4 @@
+/* Tra tutte le immagini nel testo ne prendo una no e una si e la metto a sinistra invece che a destra */ 
 #container .textBlock img.image:nth-of-type(odd){float: left;}
 
 
