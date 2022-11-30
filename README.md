@@ -1,9 +1,4 @@
----
-title: Relazione NBA website
-author: _Danilo Borrelli & Joriz Atendido_
-geometry: margin=2cm
-output: pdf_document
----
+
 # Descrizione pagina
 Website riguardate l'NBA, avente la storia, organizzazione, squadre, record, e partite.
 
